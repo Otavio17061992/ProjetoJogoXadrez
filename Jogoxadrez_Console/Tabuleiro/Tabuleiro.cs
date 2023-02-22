@@ -1,18 +1,24 @@
 ﻿
 
-namespace Jogoxadrez_Console.Tabuleiro
+namespace tabuleiro
 {
     internal class Tabuleiro
     {
         public int Linhas { get; set; }
         public int Colunas { get; set; }
-        private Peca[,] pecas;
+
+        private Peca[,] Pecas;
 
         public Tabuleiro(int linhas,int colunas)
         {
             this.Linhas = linhas;
             this.Colunas = colunas;
-            pecas = new Peca[linhas, colunas];
+            Pecas = new Peca[linhas, colunas];
+        }
+
+        public Peca Peca(int linha, int coluna) 
+        {
+            return Pecas[linha, coluna];
         }
     }
 }

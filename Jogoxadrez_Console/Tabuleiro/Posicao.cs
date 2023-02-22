@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Jogoxadrez_Console.Tabuleiro
+namespace tabuleiro
 {
     internal class Posicao
     {

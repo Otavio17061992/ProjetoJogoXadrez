@@ -1,6 +1,6 @@
 ﻿
 
-namespace Jogoxadrez_Console.Tabuleiro
+namespace tabuleiro
 {
     internal class Peca
     {
