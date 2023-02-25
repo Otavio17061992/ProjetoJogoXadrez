@@ -1,4 +1,6 @@
-﻿
+﻿using tabuleiro;
+using xadrez;
+
 
 namespace tabuleiro
 {
@@ -43,6 +45,19 @@ namespace tabuleiro
             Pecas[pos.Linha, pos.Coluna] = p;
             p.posicao = pos;
         }
+
+        public Peca RetirarPeca(Posicao pos)
+        {
+            if (Peca(pos) == null)
+            {
+                return null;
+            }
+            Peca aux = Peca(pos);
+            aux.posicao = null;
+            Pecas[pos.Linha, pos.Coluna] = null;
+            return aux;
+        }
+
 
         public bool PosicaoValida(Posicao pos)
         {

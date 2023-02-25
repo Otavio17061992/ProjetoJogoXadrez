@@ -9,10 +9,10 @@ namespace xadrez
 {
     internal class PosicaoXadrez
     {
-        public char Coluna { get; set; }
+        public int Coluna { get; set; }
         public int Linha { get; set; }
 
-        public PosicaoXadrez(char coluna, int linha)
+        public PosicaoXadrez(int coluna, int linha)
         {
             Coluna = coluna;
             Linha = linha;
