@@ -14,8 +14,8 @@ namespace xadrez
 
         public PosicaoXadrez(int coluna, int linha)
         {
-            Coluna = coluna;
-            Linha = linha;
+            this.Coluna = coluna;
+            this.Linha = linha;
         }
 
         public Posicao ToPosicao()

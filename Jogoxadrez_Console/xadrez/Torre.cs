@@ -16,7 +16,7 @@ namespace xadrez
 
         public override string ToString()
         {
-            return "R";
+            return "T";
         }
 
         private bool podeMover(Posicao pos)

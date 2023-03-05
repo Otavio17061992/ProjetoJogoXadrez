@@ -77,7 +77,7 @@ namespace xadrez
             }
 
             //oeste
-            pos.DefinirValores(posicao.Linha, posicao.Coluna - 1);
+            pos.DefinirValores(posicao.Linha, posicao.Coluna-1);
             if (tab.PosicaoValida(pos) && podeMover(pos))
             {
                 mat[pos.Linha, pos.Coluna] = true;
