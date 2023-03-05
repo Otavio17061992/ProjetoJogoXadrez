@@ -15,11 +15,7 @@ internal class Program
                 try
                 {
                     Console.Clear();
-                    Tela.imprimirTabuleiro(partida.tab);
-                    Console.WriteLine();
-
-                    Console.WriteLine("Turno: " + partida.turno);
-                    Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
+                    Tela.ImprimirPartida(partida);
 
                     Console.WriteLine();
                     Console.Write("Origem: ");
@@ -36,6 +32,8 @@ internal class Program
 
                     Console.Write("Destino: ");
                     Posicao destino = Tela.lerPosicaoXadrez().ToPosicao();
+
+                    partida.ValidarPosicaoDeDestino(origem, destino);
 
                     partida.RealizaJogada(origem, destino);
                 }
